@@ -29,7 +29,10 @@ textarea{
   text-align: center;
   border-radius: 15px;
 }
-
+.time {
+  width: 80px;
+  background-color: #06AED5
+}
 .row {
   white-space: pre-wrap;
   height: 80px;
