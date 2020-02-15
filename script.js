@@ -17,3 +17,16 @@ $("button").on("click",function(){
     localStorage.setItem("hour" + $(this).parent().prev().attr("data-hour"),$(this).parent().prev().val());
 
 })
+
+
+//Display current day and time in header
+var currentDay = $("#currentDay");
+var momentVal;
+timeInterval = setInterval(function(){
+
+momentVal  = moment().format('MMMM Do YYYY, h:mm:ss a');
+currentDay.text(momentVal);
+if(moment().format("mm") === "00"){
+  //adjust colors
+}
+},1000);
